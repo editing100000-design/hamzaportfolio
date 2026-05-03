@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Hamza Arshad – Motion Graphics Video Editor</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="eyebrow">Motion Graphics Video Editor</p>
+  <h1>
+    HAMZA<br/>
+    <span class="grad accent-grad">ARSHAD.</span>
+  </h1>
+  <p class="hero-sub">
+    I'm Hamza Arshad, a motion graphics and reel editor with 3 years of experience. I have worked with clients worldwide. Currently, I am providing video editing services at 
+    <a href="https://www.instagram.com/mycontentkitchen_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Content Kitchen</a>.
+  </p>
+  <div class="pills">
+    <span class="pill">Motion Graphics</span>
+    <span class="pill">Reels &amp; Shorts</span>
+    <span class="pill">Social Ads</span>
+    <span class="pill">3 Years Experience</span>
+  </div>
+</section>
+
+<!-- GRID -->
+<section class="grid-section">
+  <div class="section-hdr">
+    <h2>SELECTED <span class="accent-grad">WORK</span></h2>
+    <span>9 projects</span>
+  </div>
+  <div class="grid">
+    <div class="card" onclick="openModal('1188785093', 'Editing Practice')">
+      <div class="thumb">
+        <img src="assets/thumbnails/editing_practice.jpg" alt="Editing Practice" loading="lazy"/>
+        <div class="overlay">
+          <div class="play-btn">&#9654;</div>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Editing Practice</h3>
+        <span class="tag">Motion Edit</span>
+      </div>
+    </div>
+        <div class="card" onclick="openModal('1188785168', 'Whiteboard Reel')">
+      <div class="thumb">
+        <img src="assets/thumbnails/whiteboard_reel.jpg" alt="Whiteboard Reel" loading="lazy"/>
+        <div class="overlay">
+          <div class="play-btn">&#9654;</div>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Whiteboard Reel</h3>
+        <span class="tag">Explainer</span>
+      </div>
+    </div>
+        <div class="card" onclick="openModal('1188785460', 'What We Do')">
+      <div class="thumb">
+        <img src="assets/thumbnails/what_we_do.jpg" alt="What We Do" loading="lazy"/>
+        <div class="overlay">
+          <div class="play-btn">&#9654;</div>
+        </div>
+      </div>
+      <div class="info">
+        <h3>What We Do</h3>
+        <span class="tag">Brand Reel</span>
+      </div>
+    </div>
+        <div class="card" onclick="openModal('1188786471', 'MFG 4K')">
+      <div class="thumb">
+        <img src="assets/thumbnails/mfg_4k.jpg" alt="MFG 4K" loading="lazy"/>
+        <div class="overlay">
+          <div class="play-btn">&#9654;</div>
+        </div>
+      </div>
+      <div class="info">
+        <h3>MFG 4K</h3>
+        <span class="tag">4K Cinematic</span>
+      </div>
+    </div>
+        <div class="card" onclick="openModal('1188785627', 'Zarkini Trail')">
+      <div class="thumb">
+        <img src="assets/thumbnails/zarkini_trail.jpg" alt="Zarkini Trail" loading="lazy"/>
+        <div class="overlay">
+          <div class="play-btn">&#9654;</div>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Zarkini Trail</h3>
+        <span class="tag">Lifestyle</span>
+      </div>
+    </div>
+        <div class="card" onclick="openModal('1188785535', 'Rene Reel')">
+      <div class="thumb">
+        <img src="assets/thumbnails/rene_reel.jpg" alt="Rene Reel" loading="lazy"/>
+        <div class="overlay">
+          <div class="play-btn">&#9654;</div>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Rene Reel</h3>
+        <span class="tag">Showreel</span>
+      </div>
+    </div>
+        <div class="card" onclick="openModal('1188785592', 'Apertic Media')">
+      <div class="thumb">
+        <img src="assets/thumbnails/apertic_media.jpg" alt="Apertic Media" loading="lazy"/>
+        <div class="overlay">
+          <div class="play-btn">&#9654;</div>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Apertic Media</h3>
+        <span class="tag">Agency Reel</span>
+      </div>
+    </div>
+        <div class="card" onclick="openModal('1188785100', 'Content Kitchen')">
+      <div class="thumb">
+        <img src="assets/thumbnails/content_kitchen.jpg" alt="Content Kitchen" loading="lazy"/>
+        <div class="overlay">
+          <div class="play-btn">&#9654;</div>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Content Kitchen</h3>
+        <span class="tag">Social Content</span>
+      </div>
+    </div>
+        <div class="card" onclick="openModal('1188785924', 'Holi Athlete')">
+      <div class="thumb">
+        <img src="assets/thumbnails/holi_athlete.jpg" alt="Holi Athlete" loading="lazy"/>
+        <div class="overlay">
+          <div class="play-btn">&#9654;</div>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Holi Athlete</h3>
+        <span class="tag">Sports Reel</span>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal" onclick="closeModalOutside(event)">
+  <div class="modal-inner">
+    <button class="modal-close" onclick="closeModal()">&#10005;</button>
+    <div class="modal-title" id="modalTitle"></div>
+    <div class="vimeo-wrap">
+      <iframe id="vimeoFrame"
+        src=""
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-name">HAMZA <span>.</span></div>
+      <div class="footer-tagline">Motion Graphics Video Editor</div>
+    </div>
+    <div class="contact-links">
+      <!-- Email -->
+      <a href="mailto:editorhamza111@gmail.com" class="contact-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        Email
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/hamza-arshad-367484329/" target="_blank" class="contact-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+        </svg>
+        LinkedIn
+      </a>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/923111236082" target="_blank" class="contact-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12.004 2C6.477 2 2.004 6.473 2.004 12c0 1.99.585 3.842 1.596 5.393L2 22l4.804-1.545A9.962 9.962 0 0 0 12.004 22C17.531 22 22 17.527 22 12S17.527 2 12.004 2zm0 18.194a8.193 8.193 0 0 1-4.178-1.145l-.299-.178-3.104.999.982-3.01-.196-.31A8.19 8.19 0 0 1 3.81 12c0-4.521 3.679-8.198 8.2-8.198 4.517 0 8.194 3.677 8.194 8.198 0 4.52-3.677 8.194-8.2 8.194z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+  <div class="thanks">THANK YOU <span>FOR YOUR</span> ATTENTION.</div>
+</footer>
+
+<script>
+  function openModal(vimeoId, title) {
+    document.getElementById('vimeoFrame').src =
+      'https://player.vimeo.com/video/' + vimeoId + '?autoplay=1&color=E8C46A&title=0&byline=0&portrait=0';
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    document.getElementById('vimeoFrame').src = '';
+    document.getElementById('modal').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  function closeModalOutside(e) {
+    if (e.target === document.getElementById('modal')) closeModal();
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+  });
+</script>
+</body>
+</html>
